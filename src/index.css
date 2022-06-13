@@ -1,14 +1,18 @@
-:root{
+:root {
   --primary-color: #64FFDA;
   --transparent-bg: #64ffda1f;
 }
-.primary-btn{
+
+
+.primary-btn {
   border-color: var(--primary-color) !important;
 }
-.primary-btn:hover{
+
+.primary-btn:hover {
   background: var(--transparent-bg) !important;
   color: #fff !important;
 }
+
 .container {
   max-width: 1200px !important;
 }
@@ -27,9 +31,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-html, body{
+
+html,
+body {
   scroll-behavior: smooth;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

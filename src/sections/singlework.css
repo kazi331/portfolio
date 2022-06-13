@@ -1,0 +1,9 @@
+.work{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position-y: 0 !important;
+    transition: 2s ease-in-out;
+}
+.work:hover{
+    background-position-y: 100% !important;
+}
