@@ -28,9 +28,8 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <ul className="hidden lg:flex menu menu-horizontal p-0">
                         {menuItems}
-                    <button className="hidden lg:block btn btn-outline primary-btn">RESUME</button>
+                    <button className="hidden lg:block btn btn-outline primary-btn ml-3">RESUME</button>
                     </ul>
-                    <button className="block lg:hidden btn btn-outline primary-btn">RESUME</button>
                 </div>
             </div>
         </nav>
