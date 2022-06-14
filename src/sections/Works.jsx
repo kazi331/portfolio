@@ -1,7 +1,7 @@
 import SingleWork from "./SingleWork";
 
 const Works = () => {
-    const myWorks = [1,2,3,4]
+    const myWorks = [1]
     return (
         <section className="text-gray-400 body-font mt-40">
             <h2 className="text-6xl font-bold">Latest works</h2>

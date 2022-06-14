@@ -1,36 +1,26 @@
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-    const menuItems = <>
-        <li><Link spy={true} smooth={true} offset={-64} duration={200} to="hero" >Home</Link></li>
-        <li><Link spy={true} smooth={true} offset={-64} duration={200} to="about" >ABOUT</Link></li>
-        <li><Link spy={true} smooth={true} offset={-64} duration={200} to="works" >WORKS</Link></li>
-        <li><Link spy={true} smooth={true} offset={-64} duration={200} to="skills" >SKILLS</Link></li>
-        <li><Link spy={true} smooth={true} offset={-64} duration={200} to="blogs" >BLOGS</Link></li>
-
-    </>
+    const [hidden, setHidden] = useState(true);
     return (
-        <nav className="navbar bg-gray-900 bg-opacity-50 sticky top-0 backdrop-blur-sm" id='navbar'>
-            <div className="container mx-auto">
-                <div className="navbar-start">
-                    <div className="dropdown">
-                        {/* Mobile menu  */}
-                        <label tabIndex="0" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            {menuItems}
-                        </ul>
-                    </div>
-                    <Link to="/" className="btn btn-ghost normal-case text-xl">KS</Link>
-                </div>
-                {/* Desktop menu  */}
-                <div className="navbar-end">
-                    <ul className="hidden lg:flex menu menu-horizontal p-0">
-                        {menuItems}
-                    <button className="hidden lg:block btn btn-outline primary-btn ml-3">RESUME</button>
-                    </ul>
-                </div>
+        <nav className="flex flex-wrap justify-between w-full px-4 sticky top-0 select-none bg-gray-900 py-4 text-gray-200 items-center">
+            <div className="mr-auto bg-gray-900 text-2xl md:ml-4"> <NavLink to="/">Shariful Islam</NavLink> </div>
+
+            <svg onClick={() => setHidden(!hidden)} className="h-6 w-6 cursor-pointer md:hidden block" id="menu-btn" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div className={`${hidden && "right-[120vw] opacity-0 md:opacity-100"} top-12 bg-gray-900 md:border-0 border-b-2  border-gray-800 md:bg-transparent rounded-lg duration-300 absolute md:static md:w-auto w-11/12 px-8 md:mx-0  md:block py-4 md:py-0`} id="menu">
+                <ul className="md:flex md:justify-between">
+                    <li><Link className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-green-500 cursor-pointer" spy={true} smooth={true} offset={-64} duration={200} to="hero" >Home</Link></li>
+                    <li><Link className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-green-500 cursor-pointer" spy={true} smooth={true} offset={-64} duration={200} to="about" >ABOUT</Link></li>
+                    <li><Link className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-green-500 cursor-pointer" spy={true} smooth={true} offset={-64} duration={200} to="works" >WORKS</Link></li>
+                    <li><Link className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-green-500 cursor-pointer" spy={true} smooth={true} offset={-64} duration={200} to="skills" >SKILLS</Link></li>
+                    <li><Link className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-green-500 cursor-pointer" spy={true} smooth={true} offset={-64} duration={200} to="blogs" >BLOGS</Link></li>
+                </ul>
             </div>
         </nav>
     );

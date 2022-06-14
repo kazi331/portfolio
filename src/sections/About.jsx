@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 import me from '../resources/me.jpg';
-import './about.scss'
+import './about.scss';
 const About = () => {
   const mailToText = "mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...."
     return (
@@ -12,12 +12,12 @@ const About = () => {
   <div className="container px-5 py-24 mx-auto">
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
       <img alt="Sharif Image" className="lg:w-1/2 w-full lg:h-auto md:w-3/5 mx-auto object-cover object-center rounded-lg  about-image" src={me} />
-      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 md:w-3/5 mx-auto mt-6 lg:mt-0">
-        <h2 className="text-sm title-font text-gray-500 tracking-widest">About Me</h2>
-        <h1 className="text-white text-3xl title-font font-medium mb-1">Kazi Shariful Islam</h1>
+      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 md:w-3/5 mx-auto mt-6 lg:mt-0 text-gray-300">
+        <h2 className="text-sm title-font tracking-widest">About Me</h2>
+        <h1 className="text-3xl title-font font-medium mb-1">Kazi Shariful Islam</h1>
             {/* social icons  */}
         <div className="flex mb-4">
-          <span className="flex py-2 text-gray-500 space-x-2">
+          <span className="flex py-2 space-x-2">
           <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://github.com/kazi331"> 
             <svg fill="currentColor" viewBox="0 0 24 24" height="20" width="20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" className="StyledIconBase-ea9ulj-0 lbJwfL"><path d="M16.24 22a1 1 0 01-1-1v-2.6a2.15 2.15 0 00-.54-1.66 1 1 0 01.61-1.67C17.75 14.78 20 14 20 9.77a4 4 0 00-.67-2.22 2.75 2.75 0 01-.41-2.06 3.71 3.71 0 000-1.41 7.65 7.65 0 00-2.09 1.09 1 1 0 01-.84.15 10.15 10.15 0 00-5.52 0 1 1 0 01-.84-.15 7.4 7.4 0 00-2.11-1.09 3.52 3.52 0 000 1.41 2.84 2.84 0 01-.43 2.08 4.07 4.07 0 00-.67 2.23c0 3.89 1.88 4.93 4.7 5.29a1 1 0 01.82.66 1 1 0 01-.21 1 2.06 2.06 0 00-.55 1.56V21a1 1 0 01-2 0v-.57a6 6 0 01-5.27-2.09 3.9 3.9 0 00-1.16-.88 1 1 0 11.5-1.94 4.93 4.93 0 012 1.36c1 1 2 1.88 3.9 1.52a3.89 3.89 0 01.23-1.58c-2.06-.52-5-2-5-7a6 6 0 011-3.33.85.85 0 00.13-.62 5.69 5.69 0 01.33-3.21 1 1 0 01.63-.57c.34-.1 1.56-.3 3.87 1.2a12.16 12.16 0 015.69 0c2.31-1.5 3.53-1.31 3.86-1.2a1 1 0 01.63.57 5.71 5.71 0 01.33 3.22.75.75 0 00.11.57 6 6 0 011 3.34c0 5.07-2.92 6.54-5 7a4.28 4.28 0 01.22 1.67V21a1 1 0 01-.94 1z" data-name="Layer 2"></path></svg>
             </a>
@@ -44,7 +44,7 @@ const About = () => {
           <a href="#!" className=" text-white bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded">Resume</a>
           <Link spy={true} smooth={true} offset={-64} duration={500} to="contact"  className=" text-white bg-indigo-500 bg-opacity-10 cursor-pointer border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded">Contact</Link>
           {/* <button className="rounded-full w-10 h-10 bg-gray-800 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+            <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
               <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
             </svg>
           </button> */}

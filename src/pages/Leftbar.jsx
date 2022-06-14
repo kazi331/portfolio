@@ -1,5 +1,3 @@
-import { Messenger, Whatsapp } from "@styled-icons/boxicons-logos";
-import { EmailOutline, GithubOutline, LinkedinOutline, TwitterOutline } from "@styled-icons/evaicons-outline";
 import SocialIcons from "../sections/SocialIcons";
 
 const Leftbar = () => {
