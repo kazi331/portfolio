@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import './navbar.scss';
 
@@ -8,7 +7,7 @@ const Navbar = () => {
     const menuItems = ['home', 'about', 'works', 'blogs', 'contact']
     return (
         <nav className="flex z-10 flex-wrap justify-between w-full px-4 sticky top-0 select-none bg-gray-900 py-4 text-gray-200 items-center">
-            <div className="mr-auto bg-gray-900 text-2xl md:ml-4 uppercase hover:tracking-wide duration-300 "> <NavLink to="/">Shariful <span className='text-[#00ffc6]'>Islam</span></NavLink> </div>
+            <div className="mr-auto bg-gray-900 text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300 "> <Link to="home">Shariful <span className='text-[#00ffc6]'>Islam</span></Link> </div>
 
             <div onClick={() => setHidden(!hidden)} className=" md:hidden block">
                 {hidden ?
@@ -24,9 +23,14 @@ const Navbar = () => {
 
                     {
                         menuItems.map((item, i) => <li key={i}>
-                            <Link className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
+                            <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
                         </li>)
                     }
+                    {/* <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="home" >HOME</Link>
+                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="about" >ABOUT</Link>
+                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="works" >WORKS</Link>
+                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="blogs" >BLOGS</Link>
+                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="contact" >CONTACT</Link> */}
                 </ul>
             </div>
         </nav>
