@@ -1,7 +1,8 @@
 import About from '../sections/About'
 import Blogs from '../sections/Blogs'
-
+import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
+
 import Works from '../sections/Works'
 
 import './home.scss'
@@ -18,7 +19,7 @@ export default function Home() {
                     <p className="text-lg my-6"> I'm a passionate web developer. It's been two years, I'm working as a web developer.
                         Currently, I'm learning Backend programming. I'm focused on Full Stack Development.
                     </p>
-                    <a href="#!" className="btn btn-outline btn-xl mt-4 primary-btn">Download Resume</a>
+                    <a href="#!" className=" text-white bg-[#00ffc6] bg-opacity-10  border-2 border-[#00ffc881] py-2 px-6 focus:outline-none hover:bg-[#00ffc6] hover:bg-opacity-40 rounded">Download Resume</a>
                 </div>
             </section>
             <section id="about" className='container mx-auto'>
@@ -34,10 +35,10 @@ export default function Home() {
                 <Blogs />
             </section>
             <section id="contact">
-
+            <Contact/>
             </section>
             <section id="footer">
-                <Footer />
+                <Footer/>
             </section>
         </div>
     )

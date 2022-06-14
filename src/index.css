@@ -17,6 +17,9 @@
   max-width: 1200px !important;
 }
 
+.fav-color{
+  color: #00ffc6 ;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
