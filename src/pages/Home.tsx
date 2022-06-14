@@ -10,7 +10,7 @@ import './home.scss'
 export default function Home() {
     return (
         <div className="w-full mx-auto">
-            <section id="hero" className="min-h-screen container flex items-center mx-auto text-gray-300">
+            <section id="home" className="min-h-screen container flex items-center mx-auto text-gray-300">
                 <div className="w-full md:w-9/12 xl:w-8/12 px-4 py-24 pb-20">
                     <h2 className='text-[#00ffc6]'>Hi, My name is,</h2>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold my-6"> Kazi Shariful Islam</h1>
