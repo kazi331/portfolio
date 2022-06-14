@@ -23,14 +23,9 @@ const Navbar = () => {
 
                     {
                         menuItems.map((item, i) => <li key={i}>
-                            <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
+                            <Link onClick={() => setHidden(!hidden)}  activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
                         </li>)
                     }
-                    {/* <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="home" >HOME</Link>
-                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="about" >ABOUT</Link>
-                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="works" >WORKS</Link>
-                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="blogs" >BLOGS</Link>
-                    <Link activeClass="active" className="py-2 menu-item px-5 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to="contact" >CONTACT</Link> */}
                 </ul>
             </div>
         </nav>
