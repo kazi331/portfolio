@@ -33,6 +33,7 @@ emailjs.sendForm(
   // }
   return (
     <div className="text-gray-400 bg-gray-900 body-font relative">
+      <h2 className="text-4xl md:text-6xl text-center md:mb-10 mt-20 font-bold">Contact Me</h2>
       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe width="100%" height="100%" title="map" className="absolute inset-0" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=comilla&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
