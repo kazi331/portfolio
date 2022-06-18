@@ -37,7 +37,7 @@ emailjs.sendForm(
       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe width="100%" height="100%" title="map" className="absolute inset-0" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=comilla&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md w-full">
+          <div className="bg-gray-900 relative -z-10 md:z-10 flex flex-wrap py-6 rounded shadow-md w-full">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">ADDRESS</h2>
               <p className="mt-1">Brahmanpara, Cumilla <br /> Bangladesh </p>
@@ -54,6 +54,11 @@ emailjs.sendForm(
           <h2 className="text-white text-lg mb-1 font-medium title-font">Contact Me</h2>
           <p>You can also contact me directly via phone or email</p>
           <p>Phone: <a href="tel:01612178331" className="leading-relaxed">+880 1612178331</a></p>
+          <p>Whatsapp: 
+          <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=01612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
+            01612178331
+            </a>
+          </p>
           <p>Email: <a href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="text-indigo-400 leading-relaxed">kazisharifulislam52@gmail.com</a></p>
           <p className="leading-relaxed mb-5"></p>
           <form onSubmit={sendEmail} ref={form}>

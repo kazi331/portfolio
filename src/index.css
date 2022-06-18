@@ -3,6 +3,17 @@
   --transparent-bg: #64ffda1f;
 }
 
+::-webkit-scrollbar {
+  width: 8px;     
+  height: 8px;          
+}
+::-webkit-scrollbar-track {
+  background: #172135;        
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00ffc6;    
+  border-radius: 20px;      
+}
 
 .primary-btn {
   border-color: var(--primary-color) !important;
@@ -33,6 +44,16 @@ body {
   background-color: #111827;
 }
 
+nav{
+  font-family: 'Ubuntu Mono', monospace;
+
+}
+.active{
+background-color: #1F2937;
+color: #00ffc6;
+/* border-bottom: 1px solid #10ffbd; */
+}
+
 a,
 h1,
 h2 {
@@ -53,3 +74,4 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

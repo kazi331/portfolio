@@ -4,12 +4,12 @@ import './about.scss';
 const About = () => {
   const mailToText = "mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...."
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" >
       <div className="grid">
         {/* about text  */}
         <div className="text">
-          <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
-            <div className="container px-5 py-24 mx-auto">
+          <section className="text-gray-400  body-font overflow-hidden" >
+            <div className="container  px-5 py-24 mx-auto">
               <div className="lg:w-4/5 mx-auto flex flex-wrap">
                 <img alt='Sayem Khan' className="lg:w-1/2 w-full lg:h-auto md:w-3/5 mx-auto object-cover object-center rounded-lg  about-image" src={me} />
                 <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 md:w-3/5 mx-auto mt-6 lg:mt-0 text-gray-300">
@@ -23,7 +23,7 @@ const About = () => {
                       </a>
                       {/* mail to link  */}
                       <a className="hover:text-[#00ffc6] " href={mailToText}>
-                        <svg viewBox="0 0 24 24" height="20" width="20" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="StyledIconBase-ea9ulj-0 lbJwfL"><g data-name="Layer 2"><path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 01-1-1V7.25l7.4 5.55a1 1 0 00.6.2 1 1 0 00.6-.2L20 7.25V17a1 1 0 01-1 1z" data-name="email"></path></g></svg>
+                        <svg viewBox="0 0 24 24" height="20" width="20" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="StyledIconBase-ea9ulj-0 lbJwfL"><g data-name="Layer  2"><path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 01-1-1V7.25l7.4 5.55a1 1 0 00.6.2 1 1 0 00.6-.2L20 7.25V17a1 1 0 01-1 1z" data-name="email"></path></g></svg>
                       </a>
                       <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://linkedin.com/in/kazi331">
                         <svg viewBox="0 0 24 24" height="20" width="20" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="StyledIconBase-ea9ulj-0 lbJwfL"><g data-name="Layer 2"><g data-name="linkedin"><path d="M20 22h-1.67a2 2 0 01-2-2v-5.37a.92.92 0 00-.69-.93.84.84 0 00-.67.19.85.85 0 00-.3.65V20a2 2 0 01-2 2H11a2 2 0 01-2-2v-5.46a6.5 6.5 0 1113 0V20a2 2 0 01-2 2zm-4.5-10.31a3.73 3.73 0 01.47 0 2.91 2.91 0 012.36 2.9V20H20v-5.46a4.5 4.5 0 10-9 0V20h1.67v-5.46a2.85 2.85 0 012.83-2.85zM6 22H4a2 2 0 01-2-2V10a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2zM4 10v10h2V10zM5 7a3 3 0 113-3 3 3 0 01-3 3zm0-4a1 1 0 101 1 1 1 0 00-1-1z"></path></g></g></svg>
