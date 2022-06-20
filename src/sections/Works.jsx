@@ -47,7 +47,6 @@ const Works = () => {
 
       }
   ]
-  console.log(JSON.stringify(works ))
     return (
         <section className="text-gray-400 body-font  mt-12 md:mt-40 px-5">
             <h2 className="text-4xl md:text-6xl  text-center font-bold">My works</h2>
