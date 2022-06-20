@@ -1,0 +1,52 @@
+[
+   {
+      "id":1,
+      "name":"Superstar Electronics Webstore",
+      "live":"https://manufacurer-website.web.app/",
+      "client":"https://github.com/kazi331/Manufacturer-webstore",
+      "server":"https://github.com/kazi331/manufacturer-website-server",
+      "thumb":"https://res.cloudinary.com/phoenix-web/image/upload/v1655696058/stefjfrozniiam96fz25.png",
+      "tech":[
+         "html",
+         "css",
+         "tailwindcss",
+         "react",
+         "firebase",
+         "nodejs",
+         "express",
+         "mongodb"
+      ]
+   },
+   {
+      "id":2,
+      "name":"Phoenix Inventory Management",
+      "live":"https://assignment-11-e988e.web.app/",
+      "client":"https://github.com/kazi331/Warehouse-management",
+      "server":"https://github.com/kazi331/Warehouse-management-server",
+      "thumb":"https://res.cloudinary.com/phoenix-web/image/upload/v1655696058/yj12nacs4uvclnfdm2ry.png",
+      "tech":[
+         "html",
+         "css",
+         "tailwindcss",
+         "react",
+         "firebase",
+         "nodejs",
+         "express",
+         "mongodb"
+      ]
+   },
+   {
+      "id":3,
+      "name":"Simple Course Website",
+      "live":"https://sayems-paradise.netlify.app/",
+      "client":"https://github.com/kazi331/Sayem-s-Paradise",
+      "thumb":"https://res.cloudinary.com/phoenix-web/image/upload/v1655696069/a4bd8djlcs87lecfudgn.png",
+      "tech":[
+         "html",
+         "css",
+         "tailwindcss",
+         "react",
+         "firebase"
+      ]
+   }
+]

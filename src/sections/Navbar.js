@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import './navbar.scss';
-import resume from '../resources/Kazi-Shariful-Islam-Junior-React-Developer-resume.pdf'
+import resume from '../resources/Kazi Shariful Islam - Junior React Developer resume.pdf'
 
 const Navbar = () => {
     const [hidden, setHidden] = useState(true);

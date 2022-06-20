@@ -4,8 +4,8 @@ import './about.scss';
 const About = () => {
   const mailToText = "mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...."
   return (
-    <div className="container mx-auto" >
-      <div className="grid">
+        <div className="container mx-auto" >
+    <div className="grid">
         {/* about text  */}
         <div className="text">
           <section className="text-gray-400  body-font overflow-hidden" >
