@@ -39,13 +39,15 @@ const Works = () => {
         thumb: 'https://res.cloudinary.com/phoenix-web/image/upload/v1655698727/portfolio/p2ubfoarq0dzgyjwrvuz.png',
         tech: ['html', 'css', 'tailwindcss', 'react', 'firebase'],
         features: [
-          'A website that maintains web courses.',
-          'Login and signup system implemented with firebase.'
+          "A website that maintains web courses.",
+          "Admin can manage course and prices",
+          "Admin can update course",
+          "Login and signup system implemented with firebase."
         ]
 
       }
   ]
-  // console.log(JSON.stringify(works ))
+  console.log(JSON.stringify(works ))
     return (
         <section className="text-gray-400 body-font  mt-12 md:mt-40 px-5">
             <h2 className="text-4xl md:text-6xl  text-center font-bold">My works</h2>
