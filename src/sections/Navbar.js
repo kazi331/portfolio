@@ -16,9 +16,6 @@ const Navbar = () => {
                     <svg className='fill-white w-7 h-7 font-bold cursor-pointer active:rotate-90 transition-transform duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path className="uim-primary" d="M7,18a1,1,0,0,1-.707-1.707l10-10A.99989.99989,0,0,1,17.707,7.707l-10,10A.99676.99676,0,0,1,7,18Z"></path><path className="uim-primary" d="M17,18a.99676.99676,0,0,1-.707-.293l-10-10A.99989.99989,0,0,1,7.707,6.293l10,10A1,1,0,0,1,17,18Z"></path></svg>
                 }
             </div>
-            
-
-            {/*  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path className="uim-primary" d="M7,18a1,1,0,0,1-.707-1.707l10-10A.99989.99989,0,0,1,17.707,7.707l-10,10A.99676.99676,0,0,1,7,18Z"></path><path className="uim-primary" d="M17,18a.99676.99676,0,0,1-.707-.293l-10-10A.99989.99989,0,0,1,7.707,6.293l10,10A1,1,0,0,1,17,18Z"></path></svg> */}
 
             <div className={`${hidden && "right-[120vw] opacity-0 md:opacity-100"} scrollbar overflow-x-auto top-12 bg-gray-900 md:border-0 border-b-2  border-gray-800 md:bg-transparent rounded-lg duration-300 absolute md:static md:w-auto w-11/12 px-8 md:mx-0 py-4 md:py-0`} id="menu">
                 <ul className="md:flex md:justify-between gap-1">
