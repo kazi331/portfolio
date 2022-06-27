@@ -32,7 +32,7 @@ emailjs.sendForm(
   //   console.log(name, email, message);
   // }
   return (
-    <div className="text-gray-400 bg-gray-900 body-font relative">
+    <div className="text-gray-400  body-font relative">
       <h2 className="text-4xl md:text-6xl text-center md:mb-10 mt-20 font-bold">Contact Me</h2>
       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

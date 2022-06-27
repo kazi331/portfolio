@@ -4,17 +4,18 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;     
-  height: 8px;          
+  width: 8px;
+  height: 8px;
 }
 
 
 ::-webkit-scrollbar-track {
-  background: #172135; 
+  background: #172135;
 }
+
 ::-webkit-scrollbar-thumb {
-  background-color: #00ffc6;  
-  border-radius: 20px;      
+  background-color: #00ffc6;
+  border-radius: 20px;
 }
 
 .primary-btn {
@@ -43,29 +44,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #111827;
+  /* background-color: #111827; */
+  background: linear-gradient(90deg,#14161e,#232631,#161820);
+}
+.bg-gray-900, .bg-gray-800, .bg-gray-700{
+  background: linear-gradient(90deg,#14161e,#232631,#161820);
 }
 
-nav{
+.to-gray-900{
+  background: #172135;
+}
+
+nav {
   font-family: 'Ubuntu Mono', monospace;
 
 }
-.active{
-background-color: #1F2937;
-color: #00ffc6;
-/* border-bottom: 1px solid #10ffbd; */
+
+.active {
+  background-color: #1F2937;
+  color: #00ffc6;
+  /* border-bottom: 1px solid #10ffbd; */
 }
 
 a,
 h1,
 h2 {
   font-family: 'Ubuntu Mono', monospace;
-}
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 html,
@@ -76,4 +80,3 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-

@@ -7,9 +7,9 @@ const Navbar = () => {
     const [hidden, setHidden] = useState(true);
     const menuItems = ['home', 'about', 'works', 'blogs', 'contact']
     return (
-        <nav className="flex z-10 flex-wrap justify-between w-full px-4 sticky top-0 select-none bg-gray-900 py-4 text-gray-200 items-center">
-            <div className="mr-auto bg-gray-900 text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300 "> <Link to="home">Shariful <span className='text-[#00ffc6]'>Islam</span></Link> </div>
-            
+        <nav className="flex z-20 flex-wrap justify-between w-full px-4 sticky top-0 select-none bg-gray-900 py-4 text-gray-200 items-center">
+            <div className="mr-auto  text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300 "> <Link to="home">Shariful <span className='text-[#00ffc6]'>Islam</span></Link> </div>
+
             <div onClick={() => setHidden(!hidden)} className=" md:hidden block">
                 {hidden ?
                     <svg className="h-6 w-6 cursor-pointer active:rotate-90 transition-transform duration-300" id="menu-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" /></svg> :
@@ -17,7 +17,7 @@ const Navbar = () => {
                 }
             </div>
 
-            <div className={`${hidden && "right-[120vw] opacity-0 md:opacity-100"} scrollbar overflow-x-auto top-12 bg-gray-900 md:border-0 border-b-2  border-gray-800 md:bg-transparent rounded-lg duration-300 absolute md:static md:w-auto w-11/12 px-8 md:mx-0 py-4 md:py-0`} id="menu">
+            <div className={`${hidden && "right-[120vw] opacity-0 md:opacity-100"} scrollbar overflow-x-auto top-12 bg-[#1E212B] md:bg-transparent md:border-0 border-b-2  border-gray-800 rounded-lg duration-300 absolute md:static md:w-auto w-11/12 px-8 md:mx-0 py-4 md:py-0`} id="menu">
                 <ul className="md:flex md:justify-between gap-1">
 
                     {
@@ -26,7 +26,7 @@ const Navbar = () => {
                         </li>)
 
                     }
-                    <a href={resume} download className="inline-flex items-center bg-gray-800 border-0  py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">RESUME
+                    <a href={resume} download className="inline-flex items-center  border-0  py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">RESUME
                         <svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5 ml-1' viewBox="0 0 21 21"><g fillRule="evenodd" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" transform="translate(3 3)"><path d="m3.5 7.5 4 4 4-4" /><path d="m7.5.5v11" /><path d="m.5 14.5h14" /></g></svg>
                     </a>
                 </ul>

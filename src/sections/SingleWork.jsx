@@ -18,11 +18,11 @@ const SingleWork = ({ work }) => {
 
     return (
         <>
-            <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
+            <div className="text-gray-400  body-font overflow-hidden">
                 <div className="container px-5 py-12 mx-auto">
                     <div className="lg:w-4/5 mx-auto flex flex-wrap">
                         <img alt="ecommerce" className="thumb lg:w-1/2 w-full lg:h-auto h-64 aspect-video	 object-cover object-center rounded" src={thumb} img-data={img} />
-                        <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        <div className="bg-[#1E212B] shadow-xl rounded-lg px-5 lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                             <h2 className="text-gray-200">{
                                 tech.slice(-4).map((t, i) => <span key={i} className='inline-flex pr-1 m-1 rounded-lg gap-1 bg-opacity-10 bg-indigo-400 text-gray-300'>
                                     <span className="text-2xl bg-gray-600 text-[#00ffc6] rounded-full w-5 h-5 inline-flex items-center justify-center">
@@ -34,7 +34,7 @@ const SingleWork = ({ work }) => {
 
                             <h1 className="text-white text-3xl title-font font-medium mb-1">{name}</h1>
 
-                            <ul className="leading-relaxed lg:-ml-28 bg-gradient-to-r from-gray-800 to-gray-900 p-4 my-4 rounded">{
+                            <ul className="leading-relaxed lg:-ml-28 bg-[#1E212B]  p-4 my-4 rounded">{
                                 features.map((f, i) => <li key={i}>{f}</li>)
                             }</ul>
 
@@ -61,7 +61,7 @@ const SingleWork = ({ work }) => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     );
 };
