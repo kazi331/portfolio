@@ -30,7 +30,7 @@ const About = () => {
                       <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://linkedin.com/in/kazi331">
                         {linkedinIcon}
                       </a>
-                      <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=01612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
+                      <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
                         {whatsappIcon}
                       </a>
                     </span>
