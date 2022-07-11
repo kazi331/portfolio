@@ -2,7 +2,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './App.scss';
 import NotFound from './pages/404';
 import Layout from './pages/Layout';
 import Repos from './pages/Repos';

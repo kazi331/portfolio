@@ -2,7 +2,7 @@ import me from '../resources/me.jpg';
 const SingleBlog = () => {
     return (
         <div className="p-4 md:w-1/2 lg:w-1/3">
-            <div className="h-full p-4 flex bg-[#1E212B] rounded-lg overflow-hidden">
+            <div className="h-full p-4 flex shadow-lg bg-[#1E212B] rounded-lg overflow-hidden">
 
                 <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
                     <span className="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Jul</span>

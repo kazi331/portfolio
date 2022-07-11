@@ -4,7 +4,7 @@ import { instagramIcon, linkedinIcon, messengerIcon, repoIcon, twitterIcon } fro
 const Footer = () => {
 
   return (
-    <footer className="text-gray-400 bg-gray-900 body-font mt-10">
+    <footer className="text-gray-400  body-font mt-10">
       <div>
         <div className="container px-5 py-10 mx-auto flex items-center sm:flex-row flex-col">
           <a href="#top" className="flex title-font font-medium items-center md:justify-start justify-center text-white">
