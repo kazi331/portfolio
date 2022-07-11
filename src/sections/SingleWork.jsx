@@ -32,7 +32,7 @@ const SingleWork = ({ work }) => {
                                 </span>)
                             }</h2>
 
-                            <h1 className="text-white text-3xl title-font font-medium mb-1">{name}</h1>
+                            <h1 className="text-gray-300 text-3xl title-font font-medium mb-1">{name}</h1>
 
                             <ul className="leading-relaxed lg:-ml-28 bg-[#1E212B]  p-4 my-4 rounded">{
                                 features.map((f, i) => <li key={i}>{f}</li>)

@@ -16,7 +16,7 @@ const SingleBlog = () => {
                     <a href='https://github.com/kazi331' className="inline-flex items-center">
                         <img alt="blog" src={me} className="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center" />
                         <span className="flex-grow flex flex-col pl-3">
-                            <span className="title-font font-medium text-white"> Sayem Khan</span>
+                            <span className="title-font font-medium text-gray-300"> Sayem Khan</span>
                         </span>
                     </a>
                 </div>
