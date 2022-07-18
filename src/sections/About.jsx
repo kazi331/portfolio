@@ -2,8 +2,11 @@ import { Link } from 'react-scroll';
 import me from '../resources/me.jpg';
 import './about.scss';
 import { githubIcon, GithubLink, linkedinIcon, mailIcon, whatsappIcon } from './SocialIcons';
+
+
+const mailToText = "mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...."
+export const whatsappLink = "https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0"
 const About = () => {
-  const mailToText = "mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...."
   return (
     <div className="container mx-auto" >
       <div className="grid">
@@ -17,22 +20,12 @@ const About = () => {
                   <h2 className="text-sm title-font tracking-widest">About Me</h2>
                   <h1 className="text-3xl title-font font-medium mb-1">Kazi Shariful Islam</h1>
                   {/* social icons  */}
-                  <div className="flex mb-4">
+                  <div className="flex mb-4 about-icons">
                     <span className="flex py-2 space-x-2">
-                      <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://github.com/kazi331">
-
-                        {githubIcon}
-                      </a>
-                      {/* mail to link  */}
-                      <a className="hover:text-[#00ffc6] " href={mailToText}>
-                        {mailIcon}
-                      </a>
-                      <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://linkedin.com/in/kazi331">
-                        {linkedinIcon}
-                      </a>
-                      <a target="_blank" className="hover:text-[#00ffc6]" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
-                        {whatsappIcon}
-                      </a>
+                      <a target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href="https://github.com/kazi331">{githubIcon}</a>
+                      <a target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href={mailToText}>{mailIcon} </a>
+                      <a target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href="https://linkedin.com/in/kazi331">{linkedinIcon} </a>
+                      <a target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href={whatsappLink}>{whatsappIcon} </a>
                     </span>
                   </div>
                   {/* about text  */}

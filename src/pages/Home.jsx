@@ -5,6 +5,7 @@ import Footer from '../sections/Footer'
 
 import Works from '../sections/Works'
 import resume from '../resources/Kazi Shariful Islam - Junior React Developer resume.pdf'
+import './hero.css'
 
 export default function Home() {
     return (

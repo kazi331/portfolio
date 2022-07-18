@@ -46,9 +46,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #111827; */
   background: linear-gradient(90deg,#14161e,#232631,#161820);
+  
+  /* background-image: url('../src/resources/phone-wallpaper.PNG'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* backdrop-filter: blur(100px); */
 }
 .bg-gray-900, .bg-gray-800, .bg-gray-700{
-  background: linear-gradient(90deg,#14161e,#232631,#161820);
+  /* background: linear-gradient(90deg,#14161e,#232631,#161820); */
 }
 
 .to-gray-900{
