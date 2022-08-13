@@ -7,21 +7,21 @@ const SingleWork = ({ work }) => {
 
     return (
         <>
-            <div className="text-gray-400  body-font overflow-hidden">
-                <div className="container px-5 py-12 mx-auto">
-                    <div className="lg:w-4/5 mx-auto flex flex-wrap">
-                        <img alt="ecommerce" className="thumb lg:w-1/2 w-full lg:h-auto h-64 aspect-video	 object-cover object-center rounded" src={img} img-data={img} />
+            <div className="text-gray-400   body-font overflow-hidden ">
+                <div className="container px-5 py-12 mx-auto ">
+                    <div className="lg:w-4/5 mx-auto flex flex-wrap ">
+                        <img alt="ecommerce" className="thumb lg:w-1/2 w-full lg:h-auto h-64 aspect-video object-cover object-center rounded" src={img} img-data={img} />
                         {/* skeleton  */}
 
-                        <div className="bg-[#1E212B] shadow-xl rounded-lg px-5 lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                            <h2 className="text-gray-200">{
+                        <div className="bg-[#1E212B] rounded-lg px-5 lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 pt-4">
+                            <p className="text-gray-200">{
                                 tech.slice(-4).map((t, i) => <span key={i} className='inline-flex pr-1 m-1 rounded-lg gap-1 bg-opacity-10 bg-indigo-400 text-gray-300'>
                                     <span className="text-2xl bg-gray-600 text-[#00ffc6] rounded-full w-5 h-5 inline-flex items-center justify-center">
                                         &#x2B;
                                     </span>
                                     {t}
                                 </span>)
-                            }</h2>
+                            }</p>
 
                             <h1 className="text-gray-300 text-3xl title-font font-medium mb-1">{name}</h1>
 

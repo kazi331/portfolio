@@ -1,10 +1,10 @@
 import me from '../resources/me.jpg';
 const SingleBlog = () => {
     return (
-        <div className="p-4 md:w-1/2 lg:w-1/3">
-            <div className="h-full p-4 flex shadow-lg bg-[#1E212B] rounded-lg overflow-hidden">
+        <div className="p-4 md:w-1/2 lg:w-1/3 ">
+            <div className="h-full p-4 flex shadow-lg border-b-[1px] transition-all border-transparent hover:border-[#01F7C0] bg-[#1E212B] rounded-lg overflow-hidden">
 
-                <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                <div className="w-8 flex-shrink-0 flex flex-col text-center leading-none">
                     <span className="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Jul</span>
                     <span className="font-medium text-lg leading-none text-gray-300 title-font">18</span>
                 </div>
