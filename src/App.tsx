@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -25,7 +24,8 @@ function App() {
         <Route path="/repos" element={<Repos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <button onClick={() => window.scroll(0,0)} className={`fixed ${showBtn ? 'bottom-8' : '-bottom-10'} right-5 transition-all duration-300 p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>{chevronUp}</button>
+      {/* Back to top btn */}
+      <button onClick={() => window.scroll(0, 0)} className={`${showBtn ? 'bottom-8' : '-bottom-20'} fixed right-5 transition-all duration-100   p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>{chevronUp}</button>
       <ToastContainer />
     </div >
   );
