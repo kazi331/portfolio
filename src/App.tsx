@@ -25,7 +25,7 @@ function App() {
         <Route path="/repos" element={<Repos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <button onClick={() => window.scroll(0,0)} className={`fixed ${showBtn ? 'bottom-8' : '-bottom-10'} right-5 transition-all duration-300 p-1 md:p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>{chevronUp}</button>
+      <button onClick={() => window.scroll(0,0)} className={`fixed ${showBtn ? 'bottom-8' : '-bottom-10'} right-5 transition-all duration-300 p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>{chevronUp}</button>
       <ToastContainer />
     </div >
   );
