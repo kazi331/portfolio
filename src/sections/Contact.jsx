@@ -31,6 +31,7 @@ emailjs.sendForm(
   //   const message = e.target.message.value;
   //   console.log(name, email, message);
   // }
+  
   return (
     <div className="text-gray-200 body-font relative">
       <h2  className="text-4xl md:text-6xl text-center md:mb-10 mt-20 font-bold">Contact Me</h2>
