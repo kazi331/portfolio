@@ -1,4 +1,5 @@
 
+import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,8 +7,15 @@ import NotFound from './pages/404';
 import Layout from './pages/Layout';
 import Repos from './pages/Repos';
 import Test from './pages/Test';
+import { chevronUp } from './sections/SocialIcons';
 
 function App() {
+  const [showBtn, setShowBtn] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 500 ? setShowBtn(true) : setShowBtn(false)
+    })
+  });
   return (
     <div className='text-gray-300'>
       <Routes>
@@ -17,6 +25,7 @@ function App() {
         <Route path="/repos" element={<Repos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <button onClick={() => window.scroll(0,0)} className={`fixed ${showBtn ? 'bottom-8' : '-bottom-10'} right-5 transition-all duration-300 p-1 md:p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>{chevronUp}</button>
       <ToastContainer />
     </div >
   );

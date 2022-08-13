@@ -8,13 +8,13 @@ const Navbar = () => {
     const [navBg, setNavBg] = useState(false)
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            window.scrollY > 400 ? setNavBg('bg-gray-700 transition bg-opacity-20 shadow-lg') : setNavBg(false)
+            window.scrollY > 800 ? setNavBg('bg-gray-700 bg-opacity-20 shadow-lg py-3') : setNavBg(false)
         })
     });
 
     const menuItems = ['home', 'about', 'works', 'blogs', 'contact']
     return (
-        <nav className={`flex z-20 flex-wrap justify-between w-full px-4 sticky top-0  select-none backdrop-blur-3xl py-4  text-gray-200 items-center ${navBg}`}>
+        <nav className={`flex z-20 flex-wrap justify-between w-full px-4 sticky ${navBg ? 'top-0' : '-top-20'} select-none backdrop-blur-3xl transition-all duration-300 text-gray-200 items-center ${navBg ? navBg : 'py-4'}`}>
             <div className="mr-auto  text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300 "> <Link to="home">Shariful <span className='text-[#00ffc6]'>Islam</span></Link> </div>
 
             <div onClick={() => setHidden(!hidden)} className=" md:hidden block">
