@@ -23,7 +23,7 @@ const Navbar = () => {
                 {hidden ? hamburger : closeIcon}
             </div>
             {/* menu items */}
-            <div className={`${hidden ? "w-[0px] px-0 overflow-hidden" : 'px-4'} md:px-4 transition-all scrollbar  fixed md:static top-16 bg-[#1E212B] md:bg-transparent md:border-0 border-b-2  border-gray-800 rounded-lg shadow-3xl md:w-auto w-11/12  md:mx-0 py-4 md:py-0`} id="menu">
+            <div className={`${hidden ? "w-[0px] px-0 overflow-hidden" : 'px-4 w-11/12'} md:px-4 transition-all scrollbar  fixed md:static top-16 bg-[#1E212B] md:bg-transparent md:border-0 border-b-2  border-gray-800 rounded-lg shadow-3xl md:w-auto md:mx-0 py-4 md:py-0`} id="menu">
                 <ul className="md:flex md:justify-between gap-1">
 
                     {menuItems.map((item, i) => <li key={i}>
