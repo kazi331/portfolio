@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7c5883a.css",
-    "main.js": "/static/js/main.e643130c.js",
+    "main.css": "/static/css/main.440250cb.css",
+    "main.js": "/static/js/main.c6849af6.js",
     "static/js/787.f985c4d3.chunk.js": "/static/js/787.f985c4d3.chunk.js",
     "static/media/me.jpg": "/static/media/me.d3a2f6d2099663316429.jpg",
     "static/media/Kazi Shariful Islam - Junior React Developer resume.pdf": "/static/media/Kazi Shariful Islam - Junior React Developer resume.56663307d642a5f134b8.pdf",
     "index.html": "/index.html",
-    "main.d7c5883a.css.map": "/static/css/main.d7c5883a.css.map",
-    "main.e643130c.js.map": "/static/js/main.e643130c.js.map",
+    "main.440250cb.css.map": "/static/css/main.440250cb.css.map",
+    "main.c6849af6.js.map": "/static/js/main.c6849af6.js.map",
     "787.f985c4d3.chunk.js.map": "/static/js/787.f985c4d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7c5883a.css",
-    "static/js/main.e643130c.js"
+    "static/css/main.440250cb.css",
+    "static/js/main.c6849af6.js"
   ]
 }

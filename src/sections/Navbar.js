@@ -12,7 +12,7 @@ const Navbar = () => {
            window.scrollY > 600 ? setNavBg('bg-gray-700 bg-opacity-20 shadow-lg py-3') : setNavBg(false)
         })
     });
-console.log(hidden)
+
     const menuItems = ['home', 'about', 'works', 'blogs', 'contact']
     return (
         <nav className={`flex z-20 flex-wrap justify-between w-full px-4 sticky ${navBg ? 'top-0' : '-top-20'} select-none backdrop-blur-3xl transition-all duration-500 text-gray-200 items-center ${navBg ? navBg : 'py-4'}`}>
@@ -23,7 +23,7 @@ console.log(hidden)
                 {hidden ? hamburger : closeIcon}
             </div>
             {/* menu items */}
-            <div className={`${hidden ? "w-0 px-0 overflow-hidden border-b-0" : 'px-4'} transition-all scrollbar  top-16 bg-[#1E212B] md:bg-transparent md:border-0 border-b-2  border-gray-800 rounded-lg  fixed md:static md:w-auto w-11/12  md:mx-0 py-4 md:py-0`} id="menu">
+            <div className={`${hidden ? "w-[0px] px-0 overflow-hidden" : 'px-4'} md:px-4 transition-all scrollbar  fixed md:static top-16 bg-[#1E212B] md:bg-transparent md:border-0 border-b-2  border-gray-800 rounded-lg shadow-3xl md:w-auto w-11/12  md:mx-0 py-4 md:py-0`} id="menu">
                 <ul className="md:flex md:justify-between gap-1">
 
                     {menuItems.map((item, i) => <li key={i}>
