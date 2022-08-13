@@ -1,13 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './navbar.scss';
 import resume from '../resources/Kazi Shariful Islam - Junior React Developer resume.pdf'
 
 const Navbar = () => {
     const [hidden, setHidden] = useState(true);
+    const [navBg, setNavBg] = useState(false)
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            window.scrollY > 400 ? setNavBg('bg-gray-700 transition bg-opacity-20 shadow-lg') : setNavBg(false)
+        })
+    });
+
     const menuItems = ['home', 'about', 'works', 'blogs', 'contact']
     return (
-        <nav className="flex z-20 flex-wrap justify-between w-full px-4 sticky top-0 select-none bg-gray-900 py-4 text-gray-200 items-center">
+        <nav className={`flex z-20 flex-wrap justify-between w-full px-4 sticky top-0  select-none backdrop-blur-3xl py-4  text-gray-200 items-center ${navBg}`}>
             <div className="mr-auto  text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300 "> <Link to="home">Shariful <span className='text-[#00ffc6]'>Islam</span></Link> </div>
 
             <div onClick={() => setHidden(!hidden)} className=" md:hidden block">
@@ -22,7 +29,7 @@ const Navbar = () => {
 
                     {
                         menuItems.map((item, i) => <li key={i}>
-                            <Link onClick={() => setHidden(!hidden)} activeClass="active" className="py-2 menu-item px-4 block hover:bg-gray-800 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
+                            <Link onClick={() => setHidden(!hidden)} activeClass="active" className="py-2 menu-item px-4 block hover:bg-gray-700 rounded hover:text-[#00ffc6] cursor-pointer uppercase" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
                         </li>)
 
                     }

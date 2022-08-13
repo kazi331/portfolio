@@ -54,9 +54,7 @@ body {
   background-attachment: fixed;
   /* backdrop-filter: blur(100px); */
 }
-.bg-gray-900, .bg-gray-800, .bg-gray-700{
-  /* background: linear-gradient(90deg,#14161e,#232631,#161820); */
-}
+
 
 .to-gray-900{
   background: #172135;
@@ -68,7 +66,7 @@ nav {
 }
 
 .active {
-  background-color: #1F2937;
+  background-color: #303e52;
   color: #00ffc6;
   /* border-bottom: 1px solid #10ffbd; */
 }
