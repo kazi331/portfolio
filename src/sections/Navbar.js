@@ -27,7 +27,7 @@ const Navbar = () => {
                 <ul className="md:flex md:justify-between gap-1">
 
                     {menuItems.map((item, i) => <li key={i}>
-                        <Link onClick={() => setHidden(!hidden)} activeClass="active" className=" py-2 menu-item px-4 block hover:bg-gray-700 rounded hover:text-[#00ffc6] cursor-pointer uppercase mt-1 md:mt-0" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
+                        <Link onClick={() => setHidden(!hidden)} activeClass="active" className=" py-2 menu-item px-4 block hover:bg-gray-700 rounded hover:text-[#00ffc6] cursor-pointer capitalize mt-1 md:mt-0" spy={true} smooth={true} offset={-64} duration={200} to={item} >{item}</Link>
                     </li>)
                     }
                     <a href={resume} download className=" block md:flex items-center  hover:text-[#00ffc6] border-0  py-2 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-1 md:mt-0">

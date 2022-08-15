@@ -34,7 +34,29 @@ const Works = () => {
       ]
     },
     {
-      id: 3,
+      "id": 3,
+      "name": "KachaBazar Grocery Shop",
+      "live": "https://next-js-redux-ecommerce.vercel.app/",
+      "client": "https://github.com/kazi331/next.js-redux-ecommerce",
+      "server": "https://github.com/kazi331/next.js-redux-ecommerce",
+      "img": "https://res.cloudinary.com/phoenix-web/image/upload/v1660542063/portfolio/d5mukafzdukdzqwqqcs7.png",
+      "thumb": "https://res.cloudinary.com/phoenix-web/image/upload/c_thumb,w_200,g_face/v1660542063/portfolio/d5mukafzdukdzqwqqcs7.png",
+      "tech": [
+         "html",
+         "css",
+         "tailwindcss",
+         "next js",
+         "next auth",
+         "mongodb"
+      ],
+      "features": [
+         "A fully functional Advanced Search and filter Grocery Shop.",
+         "This website is built with Next Js and used next-auth for authentication",
+         "Customers can visit and purchase products."
+      ]
+   },
+    {
+      id: 4,
       name: 'Simple Course Website',
       live: 'https://sayems-paradise.netlify.app/',
       client: 'https://github.com/kazi331/Sayem-s-Paradise',
@@ -50,7 +72,7 @@ const Works = () => {
 
     },
     {
-      id: 4,
+      id: 5,
       name: 'Ebar Vinno Kicu hok',
       live: 'https://vinnokichu-ks.netlify.app/',
       client: 'https://github.com/kazi331/Ebar-vinno-kicu-hok',
@@ -64,7 +86,7 @@ const Works = () => {
       ]
     },
     {
-      id: 5,
+      id: 6,
       name: 'My type Buyer',
       live: 'https://taupe-duckanoo-889b2f.netlify.app/',
       client: 'https://github.com/kazi331/Lucky-Buyer',
@@ -78,7 +100,7 @@ const Works = () => {
       ]
     },
     {
-      id: 6,
+      id: 7,
       name: 'Finance Calculator',
       live: 'https://assignment5financecalculator.netlify.app/',
       client: 'https://github.com/kazi331/Finance-Calculator',
