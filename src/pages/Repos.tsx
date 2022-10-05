@@ -19,6 +19,7 @@ const Repos = () => {
                 setRepos(data)
             })
     }, [])
+    console.log(repos)
     return (<>
         <nav className='container'>
             <a href="/" className='bg-gray-500 hover:bg-opacity-80 py-2 px-4 rounded-lg ml-4 inline-block mt-2'> &#8592; Back to home</a>

@@ -11,8 +11,8 @@ const Footer = () => {
             <img alt="blog" src={me} className="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center" />
             <span className="ml-3 text-xl">Kazi Shariful Islam</span>
           </a>
-          <p className="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2022 Phoenix Web —
-            <a href="https://facebook.com/kazi331" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Kazi</a>
+          <p className="text-sm text-gray-300 sm:ml-6 sm:mt-0 mt-4">© 2022 Phoenix Web —
+            <a href="https://facebook.com/kazi331" className="text-gray-300 ml-1 " target="_blank" rel="noopener noreferrer">@Kazi</a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a href="https://facebook.com/kazi331" target="_blank" rel="noreferrer" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300 text-gray-400">

@@ -15,7 +15,7 @@ function App() {
     })
   });
   return (
-    <div className='text-gray-300'>
+    <div className='text-gray-300 backdrop-blur-lg'>
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/home" element={<Layout />} />

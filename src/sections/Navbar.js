@@ -1,23 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
-import { closeIcon, downloadBtn, hamburger } from './SocialIcons';
+import resume from '../resources/Kazi Shariful Islam - Junior React Developer resume.pdf';
 import './navbar.scss';
-import resume from '../resources/Kazi Shariful Islam - Junior React Developer resume.pdf'
+import { closeIcon, downloadBtn, hamburger } from './SocialIcons';
 
 const Navbar = () => {
     const [hidden, setHidden] = useState(true);
     const [navBg, setNavBg] = useState(false)
+    const [shortLogo, setShortLogo] = useState(false)
     useEffect(() => {
         window.addEventListener('scroll', () => {
-           window.scrollY > 600 ? setNavBg('bg-gray-700 bg-opacity-20 shadow-lg py-3') : setNavBg(false)
+            window.scrollY > 600 ? setNavBg('bg-gray-900 shadow-lg py-3') : setNavBg(false);
+            window.scrollY > 1800 ? setShortLogo(true) : setShortLogo(false)
+            
         })
-    });
-
+    },[]);
+console.log(shortLogo)
     const menuItems = ['home', 'about', 'works', 'blogs', 'contact']
     return (
         <nav className={`flex z-20 flex-wrap justify-between w-full px-4 sticky ${navBg ? 'top-0' : '-top-20'} select-none backdrop-blur-3xl transition-all duration-500 text-gray-200 items-center ${navBg ? navBg : 'py-4'}`}>
-            <div className="mr-auto  text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300 "> <Link to="home">Shariful <span className='text-[#00ffc6]'>Islam</span></Link> </div>
-
+            <div className="mr-auto  text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300">  <Link to="home">{shortLogo ? 'K': 'Shariful' }<span className='text-[#00ffc6]'>{shortLogo? 'S.': 'Islam'}</span></Link> </div>
+            
+{
+    // console.log('navbar content')
+}
             {/* hamburger menu icon */}
             <div onClick={() => setHidden(!hidden)} className=" md:hidden block">
                 {hidden ? hamburger : closeIcon}
