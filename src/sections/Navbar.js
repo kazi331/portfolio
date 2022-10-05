@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import resume from '../resources/Kazi Shariful Islam - Junior React Developer resume.pdf';
-import './navbar.scss';
 import { closeIcon, downloadBtn, hamburger } from './SocialIcons';
 
 const Navbar = () => {

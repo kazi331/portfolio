@@ -1,6 +1,5 @@
 import { Link } from 'react-scroll';
 import me from '../resources/me.jpg';
-import './about.scss';
 import { githubIcon, GithubLink, linkedinIcon, mailIcon, whatsappIcon } from './SocialIcons';
 
 
