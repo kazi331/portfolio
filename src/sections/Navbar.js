@@ -14,18 +14,17 @@ const Navbar = () => {
 
         })
     }, []);
-    console.log(shortLogo)
+    // console.log(shortLogo)
     const menuItems = ['home', 'about', 'works', 'blogs', 'contact']
     return (
-        <nav className={`flex z-20 flex-wrap justify-between w-full px-4 sticky  select-none backdrop-blur-3xl transition-all duration-500 text-gray-200 items-center  py-3 ${navBg ? 'top-0 bg-gray-900 shadow-lg' : '-top-20'} ${shortLogo ? 'py-3' : 'py-4'}`}>
-
+        <nav className={`flex z-20 flex-wrap justify-between w-full px-4 sticky  select-none backdrop-blur-3xl transition-all duration-500 text-gray-200 items-center  py-3 ${navBg ? 'top-0 bg-gray-900 shadow-lg' : '-top-20'} `}>
 
             <div className="mr-auto  text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300">
                 <Link to="home">
-                    <span className={`absolute -translate-y-4 transition-all duration-300  ${shortLogo && '-translate-y-20'} `}>Shariful <span className="text-[#00ffc6]">Islam</span>
-                    </span>
-                    <span className={`absolute -translate-x-20 -translate-y-4 transition-all duration-300  ${shortLogo && 'translate-x-0 -translate-y-4'}`}>K<span className="text-[#00ffc6]">S.</span>
-                    </span>
+                    <span className={`absolute animatetion -translate-y-4 transition-all duration-300  ${shortLogo && '-translate-y-20'} `}>Shariful <span className="text-[#00ffc6]">Islam</span></span>
+                    <span className={`absolute animatetion -translate-x-20 -translate-y-4 transition-all duration-300  ${shortLogo && 'translate-x-0 -translate-y-4'}`}>K<span className="text-[#00ffc6]">S.</span></span>
+                    {/* <span className={`absolute animatetion translate-x-0 -translate-y-4 transition-all duration-300  ${shortLogo && 'translate-x-28 opacity-0 -translate-y-4 '} `}>Shariful <span className="text-[#00ffc6]">Islam</span></span>
+                    <span className={`absolute animatetion -translate-x-20 -translate-y-4 transition-all duration-300  ${shortLogo && 'translate-x-0 -translate-y-4'}`}>K<span className="text-[#00ffc6]">S.</span></span> */}
                 </Link>
             </div>
 

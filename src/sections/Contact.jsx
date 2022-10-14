@@ -1,17 +1,17 @@
 import emailjs from '@emailjs/browser';
-import {  useRef } from "react";
+import { useRef } from "react";
 import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef()
   const sendEmail = (e) => {
     e.preventDefault()
-emailjs.sendForm(
-        'service_kyiqz8c', // service id
-        'template_nvlh9gn', //template id
-        form.current,
-        'coqTwiQUsFqtQcwZF' // public key
-      )
+    emailjs.sendForm(
+      'service_kyiqz8c', // service id
+      'template_nvlh9gn', //template id
+      form.current,
+      'coqTwiQUsFqtQcwZF' // public key
+    )
       .then(
         (res) => {
           toast.success('Message sent successfully!')
@@ -31,10 +31,10 @@ emailjs.sendForm(
   //   const message = e.target.message.value;
   //   console.log(name, email, message);
   // }
-  
+
   return (
     <div className="text-gray-200 body-font relative">
-      <h2  className="text-4xl md:text-6xl text-center md:mb-10 mt-20 font-bold">Contact Me</h2>
+      <h2 className="text-4xl md:text-6xl text-center md:mb-10 mt-20 font-bold">Contact Me</h2>
 
       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2  rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -56,9 +56,9 @@ emailjs.sendForm(
           <h2 className=" text-lg mb-1 font-medium title-font">Contact Me</h2>
           <p>You can also contact me directly via phone or email</p>
           <p>Phone: <a href="tel:01612178331" className="leading-relaxed">+880 1612178331</a></p>
-          <p>Whatsapp: 
-          <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
-            +8801612178331
+          <p>Whatsapp:
+            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
+              +8801612178331
             </a>
           </p>
           <p>Email: <a href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="text-indigo-400 leading-relaxed">kazisharifulislam52@gmail.com</a></p>
@@ -66,15 +66,15 @@ emailjs.sendForm(
           <form onSubmit={sendEmail} ref={form} className="leading-7 text-sm">
             <div className="relative mb-4">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" className="w-full bg-transparent rounded ring-1 ring-indigo-700 focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
+              <input type="text" id="name" name="name" className="w-full bg-transparent rounded ring-1 ring-indigo-400 focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
             </div>
             <div className="relative mb-4">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" className="w-full bg-transparent rounded ring-1 ring-indigo-700 focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
+              <input type="email" id="email" name="email" className="w-full bg-transparent rounded ring-1 ring-indigo-400 focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
             </div>
             <div className="relative mb-4">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" className="w-full bg-transparent rounded ring-1 ring-indigo-700 focus:ring-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+              <textarea id="message" name="message" className="w-full bg-transparent rounded ring-1 ring-indigo-400 focus:ring-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
             </div>
             <button className=" w-full bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded text-center">Send Message</button>
           </form>

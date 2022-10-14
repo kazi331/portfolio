@@ -45,8 +45,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #111827; */
-  background: linear-gradient(90deg,#14161e,#232631,#161820);
-  
+  background: linear-gradient(90deg, #14161e, #232631, #161820);
+
   /* background-image: url('../src/resources/phone-wallpaper.PNG'); */
   background-position: center;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ body {
 }
 
 
-.to-gray-900{
+.to-gray-900 {
   background: #172135;
 }
 
@@ -82,6 +82,11 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
+.animatetion {
+  transition-timing-function: cubic-bezier(0.4, 0, 0, 1.54) !important;
+}
+
 
 @tailwind base;
 @tailwind components;

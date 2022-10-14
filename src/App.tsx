@@ -5,7 +5,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import NotFound from './pages/404';
 import Layout from './pages/Layout';
 import Repos from './pages/Repos';
+import SignIn from './pages/SignIn';
 import { chevronUp } from './sections/SocialIcons';
+import './pointer.css'
+import './pointer.js'
 
 function App() {
   const [showBtn, setShowBtn] = useState(false)
@@ -20,6 +23,7 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/home" element={<Layout />} />
         <Route path="/repos" element={<Repos />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* Back to top btn */}
