@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import NotFound from './pages/404';
 import Layout from './pages/Layout';
 import Repos from './pages/Repos';
 import SignIn from './pages/SignIn';
+import './pointer.css';
+import './pointer.js';
 import { chevronUp } from './sections/SocialIcons';
-import './pointer.css'
-import './pointer.js'
 
 function App() {
   const [showBtn, setShowBtn] = useState(false)
@@ -18,7 +16,7 @@ function App() {
     })
   });
   return (
-    <div className='text-gray-300 backdrop-blur-lg'>
+    <div className='text-gray-300 backdrop-blur-xl'>
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/home" element={<Layout />} />
@@ -27,8 +25,11 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* Back to top btn */}
-      <button onClick={() => window.scroll(0, 0)} className={`${showBtn ? 'bottom-8' : '-bottom-20'} fixed right-5 transition-all duration-100   p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>{chevronUp}</button>
-      <ToastContainer />
+      <button onClick={() => window.scroll(0, 0)} 
+      className={`back2top-btn ${showBtn ? 'bottom-10' : '-bottom-20'}  right-5 transition-all duration-100   p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>
+        {chevronUp}
+        </button>
+
     </div >
   );
 }

@@ -1,36 +1,30 @@
+import toast, { Toaster } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
-import { useRef } from "react";
-import { toast } from "react-toastify";
+import { useRef, useState } from "react";
 
 const Contact = () => {
+  const [sending, setSending] = useState(false)
   const form = useRef()
-  const sendEmail = (e) => {
+
+  const sendEmail = async (e) => {
     e.preventDefault()
-    emailjs.sendForm(
-      'service_kyiqz8c', // service id
-      'template_nvlh9gn', //template id
-      form.current,
-      'coqTwiQUsFqtQcwZF' // public key
-    )
-      .then(
-        (res) => {
-          toast.success('Message sent successfully!')
-          console.log(res)
-          // window.location.reload(false)
-        },
-        (err) => {
-          console.log(err);
-          toast.error('Message not sent, please try again')
-        }
+    setSending(true)
+    try {
+      await emailjs.sendForm(
+        'service_kyiqz8c', // service id
+        'template_nvlh9gn', //template id
+        form.current,
+        'coqTwiQUsFqtQcwZF' // public key
       )
+      toast.success('Message is sent successfully!')
+      setSending(false)
+      e.target.reset();
+
+    } catch (err) {
+      toast.error('Message Not Sent. Try later!')
+      setSending(false)
+    }
   }
-  // const sendMessage = (e) => {
-  //   e.preventDefault();
-  //   const name = e.target.name.value;
-  //   const email = e.target.email.value;
-  //   const message = e.target.message.value;
-  //   console.log(name, email, message);
-  // }
 
   return (
     <div className="text-gray-200 body-font relative">
@@ -66,18 +60,22 @@ const Contact = () => {
           <form onSubmit={sendEmail} ref={form} className="leading-7 text-sm">
             <div className="relative mb-4">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" className="w-full bg-transparent rounded ring-0 sm:ring-1 border border-indigo-400 sm:border-none ring-indigo-400  focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
+              <input type="text" id="name" name="name" className="w-full bg-transparent rounded ring-0 sm:ring-1 border border-indigo-600 sm:border-none ring-indigo-400  focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
             </div>
             <div className="relative mb-4">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" className="w-full bg-transparent rounded ring-0 sm:ring-1 border border-indigo-400 sm:border-none ring-indigo-400  focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
+              <input type="email" id="email" name="email" className="w-full bg-transparent rounded ring-0 sm:ring-1 border border-indigo-600 sm:border-none ring-indigo-400  focus:ring-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
             </div>
             <div className="relative mb-4">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" className="w-full bg-transparent rounded ring-0 sm:ring-1 border border-indigo-400 sm:border-none ring-indigo-400  focus:ring-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+              <textarea id="message" name="message" className="w-full bg-transparent rounded ring-0 sm:ring-1 border border-indigo-600 sm:border-none ring-indigo-400  focus:ring-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
             </div>
-            <button className=" w-full bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded text-center">Send Message</button>
+            <button disabled={sending} className=" w-full bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded text-center">{sending ? 'Processing...' : 'Send Message'}</button>
           </form>
+          <Toaster
+            position="bottom-right"
+            reverseOrder={false}
+          />
         </div>
       </div>
     </div>

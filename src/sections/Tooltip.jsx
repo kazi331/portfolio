@@ -1,9 +1,5 @@
-import { ReactNode } from "react";
-export const Tooltip = ({
-  message, children
-}: {
-  message: string, children: ReactNode
-}) => {
+
+export const Tooltip = ({ message, children }) => {
   return (
     <div className="relative flex flex-col items-center group">
       {children}

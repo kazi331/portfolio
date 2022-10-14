@@ -87,6 +87,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0, 1.54) !important;
 }
 
+.back2top-btn {
+  position: sticky;
+  left: calc(100% - 4.5rem);
+}
 
 @tailwind base;
 @tailwind components;
