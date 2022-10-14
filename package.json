@@ -49,6 +49,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.1.2"
-  },
-  "proxy": "http://localhost:5000/api/login"
+  }
 }
