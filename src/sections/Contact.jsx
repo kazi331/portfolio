@@ -1,6 +1,6 @@
-import toast, { Toaster } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
   const [sending, setSending] = useState(false)
@@ -40,22 +40,22 @@ const Contact = () => {
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold  tracking-widest text-xs">EMAIL</h2>
-              <a href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="leading-relaxed">kazisharifulislam52@gmail.com</a>
+              <a area-label="email" href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="leading-relaxed">kazisharifulislam52@gmail.com</a>
               <h2 className="title-font font-semibold  tracking-widest text-xs mt-4">PHONE</h2>
-              <a href="tel:01612178331" className="leading-relaxed">+8801612178331</a>
+              <a area-label="phone" href="tel:01612178331" className="leading-relaxed">+8801612178331</a>
             </div>
           </div>
         </div>
         <div className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 ">
           <h2 className=" text-lg mb-1 font-medium title-font">Contact Me</h2>
           <p>You can also contact me directly via phone or email</p>
-          <p>Phone: <a href="tel:01612178331" className="leading-relaxed">+880 1612178331</a></p>
+          <p>Phone: <a area-label="phone" href="tel:01612178331" className="leading-relaxed">+880 1612178331</a></p>
           <p>Whatsapp:
-            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
+            <a area-label="phone" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
               +8801612178331
             </a>
           </p>
-          <p>Email: <a href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="text-indigo-400 leading-relaxed">kazisharifulislam52@gmail.com</a></p>
+          <p>Email: <a area-label="email" href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="text-indigo-400 leading-relaxed">kazisharifulislam52@gmail.com</a></p>
           <p className="leading-relaxed mb-5"></p>
           <form onSubmit={sendEmail} ref={form} className="leading-7 text-sm">
             <div className="relative mb-4">
@@ -70,7 +70,7 @@ const Contact = () => {
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message" className="w-full bg-transparent rounded ring-0 sm:ring-1 border border-indigo-600 sm:border-none ring-indigo-400  focus:ring-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
             </div>
-            <button disabled={sending} className=" w-full bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded text-center">{sending ? 'Processing...' : 'Send Message'}</button>
+            <button aria-label="submit contact form" disabled={sending} className=" w-full bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded text-center">{sending ? 'Processing...' : 'Send Message'}</button>
           </form>
           <Toaster
             position="bottom-right"

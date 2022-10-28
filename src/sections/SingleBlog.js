@@ -10,9 +10,9 @@ const SingleBlog = () => {
 
                 <div className="flex-grow pl-6">
                     <h2 className="tracking-widest text-xs title-font font-medium fav-color mb-1">CATEGORY</h2>
-                    <a href="#!" className="title-font text-xl py-1 inline-block font-medium text-gray-300 hover:text-[#00ffc6] mb-3">Post Title goes here</a>
+                    <a area-label="post title" href="#!" className="title-font text-xl py-1 inline-block font-medium text-gray-300 hover:text-[#00ffc6] mb-3">Post Title goes here</a>
                     <p className="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    <a href='https://github.com/kazi331' className="inline-flex items-center">
+                    <a area-label="me" href='https://github.com/kazi331' className="inline-flex items-center">
                         <img alt="blog" src={me} className="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center" />
                         <span className="flex-grow flex flex-col pl-3">
                             <span className="title-font font-medium text-gray-300"> Sayem Khan</span>

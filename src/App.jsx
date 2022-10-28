@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import NotFound from './pages/404';
 import Layout from './pages/Layout';
 import Repos from './pages/Repos';
-import SignIn from './pages/SignIn';
 import './pointer.css';
 import './pointer.js';
 import { chevronUp } from './sections/SocialIcons';
@@ -21,11 +20,10 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/home" element={<Layout />} />
         <Route path="/repos" element={<Repos />} />
-        <Route path="/signin" element={<SignIn />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* Back to top btn */}
-      <button onClick={() => window.scroll(0, 0)} 
+      <button aria-label='scroll-to-top' onClick={() => window.scroll(0, 0)} 
       className={`back2top-btn ${showBtn ? 'bottom-10' : '-bottom-20'}  right-5 transition-all duration-100   p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>
         {chevronUp}
         </button>

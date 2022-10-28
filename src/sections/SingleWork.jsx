@@ -10,7 +10,7 @@ const SingleWork = ({ work }) => {
             <div className="text-gray-400 body-font overflow-hidden ">
                 <div className="container px-5 py-12 mx-auto ">
                     <div className="lg:w-4/5 mx-auto flex flex-wrap ">
-                        <img alt="ecommerce" className="thumb lg:w-1/2 w-full lg:h-auto h-64 aspect-video object-cover object-center rounded" src={img} img-data={img} />
+                        <img alt="ecommerce" width="300" height="300" className="thumb lg:w-1/2 w-full lg:h-auto h-64 aspect-video object-cover object-center rounded" src={img} img-data={img} />
                         {/* skeleton  */}
 
                         <div className="bg-[#1E212B] bg-opacity-40 rounded-lg px-5 lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 pt-4">
@@ -30,17 +30,17 @@ const SingleWork = ({ work }) => {
                             }</ul>
 
                             <div className="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                                <a href={live} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-[#00ffc6] inline-flex items-center">Live
+                                <a area-label="linkedin" href={live} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-[#00ffc6] inline-flex items-center">Live
                                     {linkIcon}
                                 </a>
-                                <a href={client} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 mr-3 inline-flex items-center ml-auto leading-none text-sm py-1 ">
+                                <a area-label="github client" href={client} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 mr-3 inline-flex items-center ml-auto leading-none text-sm py-1 ">
                                     <Tooltip message="client source code">
                                         <GithubLink>Client</GithubLink>
                                     </Tooltip>
                                 </a>
 
                                 {server &&
-                                    <a href={server} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 inline-flex items-center leading-none text-sm pl-3 border-l-2 border-gray-800">
+                                    <a area-label="github server" href={server} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 inline-flex items-center leading-none text-sm pl-3 border-l-2 border-gray-800">
                                         <Tooltip message="server source code">
                                             <GithubLink>Server</GithubLink>
                                         </Tooltip>

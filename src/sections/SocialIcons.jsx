@@ -23,22 +23,22 @@ export const GithubLink = ({ children }) => {
 const SocialIcons = () => {
     return (
         <>
-            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://github.com/kazi331">
+            <a area-label="github" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://github.com/kazi331">
                 {githubIcon}
             </a>
-            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="mailto:kazisharifulislam52@gmail.com">
+            <a area-label="email" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="mailto:kazisharifulislam52@gmail.com">
                 {mailIcon}
             </a>
-            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://linkedin.com/in/kazi331">
+            <a area-label="linkedin" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://linkedin.com/in/kazi331">
                 {linkedinIcon}
             </a>
-            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://twitter.com/dev_kazi">
+            <a area-label="twitter" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://twitter.com/dev_kazi">
                 {twitterIcon}
             </a>
-            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href={whatsappLink}>
+            <a area-label="whatsapp" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href={whatsappLink}>
                 {whatsappIcon}
             </a>
-            <a target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://messenger.com/t/kazi331">
+            <a area-label="messenger" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://messenger.com/t/kazi331">
                 {messengerIcon}
             </a>
         </>
