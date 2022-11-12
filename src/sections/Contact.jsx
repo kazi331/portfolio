@@ -40,22 +40,22 @@ const Contact = () => {
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold  tracking-widest text-xs">EMAIL</h2>
-              <a area-label="email" href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="leading-relaxed">kazisharifulislam52@gmail.com</a>
+              <a aria-label="email" href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="leading-relaxed">kazisharifulislam52@gmail.com</a>
               <h2 className="title-font font-semibold  tracking-widest text-xs mt-4">PHONE</h2>
-              <a area-label="phone" href="tel:01612178331" className="leading-relaxed">+8801612178331</a>
+              <a aria-label="phone" href="tel:01612178331" className="leading-relaxed">+8801612178331</a>
             </div>
           </div>
         </div>
         <div className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 ">
           <h2 className=" text-lg mb-1 font-medium title-font">Contact Me</h2>
           <p>You can also contact me directly via phone or email</p>
-          <p>Phone: <a area-label="phone" href="tel:01612178331" className="leading-relaxed">+880 1612178331</a></p>
+          <p>Phone: <a aria-label="phone" href="tel:01612178331" className="leading-relaxed">+880 1612178331</a></p>
           <p>Whatsapp:
-            <a area-label="phone" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
+            <a aria-label="phone" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://api.whatsapp.com/send/?phone=+8801612178331&text=I%27m+interested+to+talk+with+you+about+your+portfolio&app_absent=0">
               +8801612178331
             </a>
           </p>
-          <p>Email: <a area-label="email" href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="text-indigo-400 leading-relaxed">kazisharifulislam52@gmail.com</a></p>
+          <p>Email: <a aria-label="email" href="mailto:kazisharifulislam52@gmail.com?subject=Hey%2C%20I%20want%20to%20talk%20to%20you&body=Hey%20Shariful%20Islam%2C%0D%0A...." className="text-indigo-400 leading-relaxed">kazisharifulislam52@gmail.com</a></p>
           <p className="leading-relaxed mb-5"></p>
           <form onSubmit={sendEmail} ref={form} className="leading-7 text-sm">
             <div className="relative mb-4">

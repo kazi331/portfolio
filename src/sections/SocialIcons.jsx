@@ -23,22 +23,22 @@ export const GithubLink = ({ children }) => {
 const SocialIcons = () => {
     return (
         <>
-            <a area-label="github" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://github.com/kazi331">
+            <a aria-label="github" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://github.com/kazi331">
                 {githubIcon}
             </a>
-            <a area-label="email" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="mailto:kazisharifulislam52@gmail.com">
+            <a aria-label="email" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="mailto:kazisharifulislam52@gmail.com">
                 {mailIcon}
             </a>
-            <a area-label="linkedin" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://linkedin.com/in/kazi331">
+            <a aria-label="linkedin" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://linkedin.com/in/kazi331">
                 {linkedinIcon}
             </a>
-            <a area-label="twitter" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://twitter.com/dev_kazi">
+            <a aria-label="twitter" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://twitter.com/dev_kazi">
                 {twitterIcon}
             </a>
-            <a area-label="whatsapp" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href={whatsappLink}>
+            <a aria-label="whatsapp" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href={whatsappLink}>
                 {whatsappIcon}
             </a>
-            <a area-label="messenger" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://messenger.com/t/kazi331">
+            <a aria-label="messenger" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://messenger.com/t/kazi331">
                 {messengerIcon}
             </a>
         </>

@@ -1,5 +1,5 @@
-/* 
-    pointer.js was created by OwL for use on websites, 
+/*
+    pointer.js was created by OwL for use on websites,
      and can be found at https://seattleowl.com/pointer.
 */
 
@@ -43,6 +43,7 @@ const init_pointer = (options) => {
     const getOption = (option) => {
         let defaultObj = {
             pointerColor: "#00ffc896",
+            shadow: '0 0 10px -2px #00ffc6',
             ringSize: 10,
             ringClickSize: (options["ringSize"] || 10) - 2,
         }
@@ -58,13 +59,17 @@ const init_pointer = (options) => {
         ringY = trace(ringY, mouseY, 0.17)
 
         if (document.querySelector(".p-action-click:hover")) {
-            pointer.style.borderColor = getOption("pointerColor")
+            pointer.style.borderColor = getOption("pointerColor");
+
             isHover = true
         } else {
             pointer.style.borderColor = "#00ffc6"
+            // pointer.style.boxShadow= "0 0 6px 2px #00ffc896"
             isHover = false
         }
         ring.style.borderColor = getOption("pointerColor")
+        ring.style.boxShadow = getOption("shadow")
+
         if (mouseDown) {
             ring.style.padding = getOption("ringClickSize") + "px"
         } else {
@@ -82,7 +87,7 @@ const init_pointer = (options) => {
 init_pointer({});
 
 
-// my code 
+// my code
 const links = document.querySelectorAll('a')
 links.forEach(link => link.addEventListener('mouseleave', () => link.classList.add('.newClass')))
 

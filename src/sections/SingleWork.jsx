@@ -30,17 +30,17 @@ const SingleWork = ({ work }) => {
                             }</ul>
 
                             <div className="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                                <a area-label="linkedin" href={live} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-[#00ffc6] inline-flex items-center">Live
+                                <a aria-label="linkedin" href={live} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-[#00ffc6] inline-flex items-center">Live
                                     {linkIcon}
                                 </a>
-                                <a area-label="github client" href={client} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 mr-3 inline-flex items-center ml-auto leading-none text-sm py-1 ">
+                                <a aria-label="github client" href={client} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 mr-3 inline-flex items-center ml-auto leading-none text-sm py-1 ">
                                     <Tooltip message="client source code">
                                         <GithubLink>Client</GithubLink>
                                     </Tooltip>
                                 </a>
 
                                 {server &&
-                                    <a area-label="github server" href={server} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 inline-flex items-center leading-none text-sm pl-3 border-l-2 border-gray-800">
+                                    <a aria-label="github server" href={server} target="_blank" rel='noreferrer' className="text-gray-400 hover:text-gray-300 inline-flex items-center leading-none text-sm pl-3 border-l-2 border-gray-800">
                                         <Tooltip message="server source code">
                                             <GithubLink>Server</GithubLink>
                                         </Tooltip>

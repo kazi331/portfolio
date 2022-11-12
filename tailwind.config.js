@@ -3,6 +3,16 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
-  themes: false,
-  plugins: []
+  theme: {
+    extend: {
+      colors: {
+        primary: "#01F7C0"
+      }
+    },
+  },
+
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ]
 }

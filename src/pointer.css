@@ -1,11 +1,8 @@
-/* 
-    This CSS file was created by OwL for use by pointer.js, 
-     witch can be found on https://seattleowl.com. 
+/*
+    This CSS file was created by OwL for use by pointer.js,
+     witch can be found on https://seattleowl.com.
 */
 
-body {
-    background-color: rgb(96, 98, 226);
-}
 
 #pointer-dot {
     left: 0;
@@ -39,6 +36,8 @@ body {
 
 html {
     cursor: none !important;
+    color: #00ffc896;
+    color: #00ffc6;
 }
 
 /* a {

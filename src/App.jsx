@@ -27,7 +27,6 @@ function App() {
       className={`back2top-btn ${showBtn ? 'bottom-10' : '-bottom-20'}  right-5 transition-all duration-100   p-2 bg-gray-50 bg-opacity-5 rounded-full backdrop-blur-3xl`}>
         {chevronUp}
         </button>
-
     </div >
   );
 }

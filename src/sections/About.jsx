@@ -21,10 +21,10 @@ const About = () => {
                   {/* social icons  */}
                   <div className="flex mb-4 about-icons">
                     <span className="flex py-2 space-x-2">
-                      <a area-label="github" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href="https://github.com/kazi331">{githubIcon}</a>
-                      <a area-label="mail" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href={mailToText}>{mailIcon} </a>
-                      <a area-label="linkedin" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href="https://linkedin.com/in/kazi331">{linkedinIcon} </a>
-                      <a area-label="whatsapp" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href={whatsappLink}>{whatsappIcon} </a>
+                      <a aria-label="github" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href="https://github.com/kazi331">{githubIcon}</a>
+                      <a aria-label="mail" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href={mailToText}>{mailIcon} </a>
+                      <a aria-label="linkedin" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href="https://linkedin.com/in/kazi331">{linkedinIcon} </a>
+                      <a aria-label="whatsapp" target="_blank" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300" rel="noreferrer" href={whatsappLink}>{whatsappIcon} </a>
                     </span>
                   </div>
                   {/* about text  */}
@@ -35,7 +35,7 @@ const About = () => {
                     I never lag behind to grab the new technology. I'm keen of learning new things and web is my learning path.
                   </p>
                   <div className="flex gap-2 mt-4">
-                    <a area-label="github" href="https://github.com/kazi331" className="mr-2 flex text-white bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded"> <GithubLink>Github</GithubLink> </a>
+                    <a aria-label="github" href="https://github.com/kazi331" className="mr-2 flex text-white bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded"> <GithubLink>Github</GithubLink> </a>
                     <Link spy={true} smooth={true} offset={-64} duration={500} to="contact" className=" text-white bg-indigo-500 bg-opacity-10 cursor-pointer border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded">Contact</Link>
                   </div>
                 </div>

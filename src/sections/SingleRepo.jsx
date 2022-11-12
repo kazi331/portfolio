@@ -11,11 +11,11 @@ const SingleRepo = ({ repo }) => {
                     <h2 className="capitalize title-font text-lg font-medium">{name}  <span className="text-xs opacity-40">- {language}</span></h2>
                     <p className="text-gray-200 text-sm pt-2">{description ? description : " No Description Provided"} </p>
                     <div className="flex items-center justify-between flex-wrap mt-auto w-full">
-                        {homepage && <a area-label="linkedin" href={homepage} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-[#00ffc6] inline-flex items-center">Live
+                        {homepage && <a aria-label="linkedin" href={homepage} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-[#00ffc6] inline-flex items-center">Live
                             {linkIcon}
                         </a>}
 
-                        <a area-label="user" href={html_url} target="_blank" rel='noreferrer' className="text-gray-300 hover:text-gray-300 mr-3 inline-flex items-center ml-auto leading-none text-sm py-1 ">
+                        <a aria-label="user" href={html_url} target="_blank" rel='noreferrer' className="text-gray-300 hover:text-gray-300 mr-3 inline-flex items-center ml-auto leading-none text-sm py-1 ">
                             <Tooltip message="source code">
                                 <GithubLink > github </GithubLink>
                             </Tooltip>
