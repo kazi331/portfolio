@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import me from '../resources/black-profile.jpg';
+import me from '../resources/sharif_black.jpg';
 import { githubIcon, GithubLink, linkedinIcon, mailIcon, whatsappIcon } from './SocialIcons';
 
 
