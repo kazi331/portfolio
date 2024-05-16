@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster, toast } from 'sonner';
 
 const Contact = () => {
   const [sending, setSending] = useState(false)
@@ -72,12 +72,9 @@ const Contact = () => {
             </div>
             <button aria-label="submit contact form" disabled={sending} className=" w-full bg-indigo-500 bg-opacity-10  border-2 border-indigo-700 py-2 px-6 focus:outline-none hover:bg-indigo-600 hover:bg-opacity-40 rounded text-center">{sending ? 'Processing...' : 'Send Message'}</button>
           </form>
-          <Toaster
-            position="bottom-right"
-            reverseOrder={false}
-          />
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };
