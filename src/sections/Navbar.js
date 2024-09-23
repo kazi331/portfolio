@@ -20,7 +20,7 @@ const Navbar = () => {
 
             <div className="mr-auto  text-2xl cursor-pointer md:ml-4 uppercase hover:tracking-wide duration-300">
                 <div onClick={() => window.scroll(0, 0)}>
-                    <span className={`absolute animatetion -translate-y-4 transition-all duration-300  ${shortLogo && '-translate-y-20'} `}>Shariful <span className="text-[#00ffc6]">Islam</span></span>
+                    <span className={`absolute animatetion -translate-y-4 transition-all duration-300  ${shortLogo && '-translate-y-40'} `}>Shariful <span className="text-[#00ffc6]">Islam</span></span>
                     <span className={`absolute animatetion -translate-x-20 -translate-y-4 transition-all duration-300  ${shortLogo && 'translate-x-0 -translate-y-4'}`}>K<span className="text-[#00ffc6]">S.</span></span>
                 </div>
             </div>
