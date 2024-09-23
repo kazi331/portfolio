@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
-import resume from '../resources/Kazi Shariful Islam - Junior React Developer resume.pdf';
+// import resume from 'public/resume/Front-end developer.pdf';
 import { closeIcon, downloadBtn, hamburger } from './SocialIcons';
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
                     </li>)
                     }
                     <li>
-                        <a aria-label="resume" href={resume} download className=" block md:flex items-center  hover:text-[#00ffc6] border-0  py-2 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-1 md:mt-0">
+                        <a aria-label="resume" href="resume/Front-end developer.pdf" download="Kazi Shariful Islam - Frontend Developer Resume.pdf" className=" block md:flex items-center  hover:text-[#00ffc6] border-0  py-2 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-1 md:mt-0">
                             <span className="flex"> RESUME {downloadBtn}</span>
                         </a>
                     </li>
