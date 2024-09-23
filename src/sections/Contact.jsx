@@ -74,7 +74,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <Toaster />
+      <Toaster position="top-right" />
     </div>
   );
 };
