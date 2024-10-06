@@ -40,7 +40,10 @@ const Navbar = () => {
                     </li>)
                     }
                     <li>
-                        <a aria-label="resume" href="resume/Front-end developer.pdf" download="Kazi Shariful Islam - Frontend Developer Resume.pdf" className=" block md:flex items-center  hover:text-[#00ffc6] border-0  py-2 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-1 md:mt-0">
+                        <a aria-label="resume"
+                            href="/resume/Kazi Shariful Islam - Frontend Developer.pdf"
+                            download="Kazi Shariful Islam - Frontend Developer.pdf"
+                            className=" block md:flex items-center  hover:text-[#00ffc6] border-0  py-2 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-1 md:mt-0">
                             <span className="flex"> RESUME {downloadBtn}</span>
                         </a>
                     </li>
