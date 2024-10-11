@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import NotFound from './pages/404';
 import Layout from './pages/Layout';
 import Repos from './pages/Repos';
-import './pointer.css';
-import './pointer.js';
+// import './pointer.css';
+// import './pointer.js';
 import { chevronUp } from './sections/SocialIcons';
 
 function App() {
