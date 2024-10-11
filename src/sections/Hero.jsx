@@ -3,7 +3,7 @@ import '../animate-title.css';
 const Hero = () => {
     return (
         <div className="hero w-full md:w-9/12 xl:w-8/12 px-4 py-24 pb-20" >
-            <h2 className='text-[#00ffc6]'>Hi, my name is</h2>
+            <h2 className='text-accent'>Hi, my name is</h2>
             <h1 className="hero-title text-5xl md:text-6xl lg:text-7xl font-bold my-6" data-text="Kazi Shariful Islam">
                 <span className="hero-text">Kazi Shariful Islam</span>
 
@@ -16,7 +16,7 @@ const Hero = () => {
                 href="/resume/Kazi Shariful Islam - Frontend Developer.pdf"
                 download="Kazi Shariful Islam - Frontend Developer.pdf"
                 target="_blank" rel='noreferrer'
-                className=" text-white bg-[#00ffc6] bg-opacity-5  border-[1px] border-[#00ffc881] p-3 focus:outline-none hover:bg-[#00ffc6] hover:bg-opacity-10 rounded">Download Resume</a>
+                className=" text-white bg-accent bg-opacity-5  border-[1px] border-[#00ffc881] p-3 focus:outline-none hover:bg-accent hover:bg-opacity-10 rounded">Download Resume</a>
         </div>
     );
 };

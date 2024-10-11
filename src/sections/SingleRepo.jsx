@@ -11,7 +11,7 @@ const SingleRepo = ({ repo }) => {
                     <h2 className="capitalize title-font text-lg font-medium">{name}  <span className="text-xs opacity-40">- {language}</span></h2>
                     <p className="text-gray-200 text-sm pt-2">{description ? description : " No Description Provided"} </p>
                     <div className="flex items-center justify-between flex-wrap mt-auto w-full">
-                        {homepage && <a aria-label="linkedin" href={homepage} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-[#00ffc6] inline-flex items-center">Live
+                        {homepage && <a aria-label="linkedin" href={homepage} target="_blank" rel='noreferrer' className="text-indigo-400 hover:text-accent inline-flex items-center">Live
                             {linkIcon}
                         </a>}
 

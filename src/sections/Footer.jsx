@@ -14,19 +14,19 @@ const Footer = () => {
           <a aria-label="Sayem" href="https://facebook.com/kazi331" className="text-gray-300 ml-1 " target="_blank" rel="noopener noreferrer">@Kazi</a>
         </p>
         <span className="flex  mt-1 justify-center sm:justify-start">
-          <a aria-label="messenger" href="https://facebook.com/kazi331" target="_blank" rel="noreferrer" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300 text-gray-400">
+          <a aria-label="messenger" href="https://facebook.com/kazi331" target="_blank" rel="noreferrer" className="hover:text-accent hover:-translate-y-1 duration-300 text-gray-400">
             {messengerIcon}
           </a>
-          <a aria-label="twitter" href="https://twitter.com/kazi331" target="_blank" rel="noreferrer" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300 ml-3 text-gray-400">
+          <a aria-label="twitter" href="https://twitter.com/kazi331" target="_blank" rel="noreferrer" className="hover:text-accent hover:-translate-y-1 duration-300 ml-3 text-gray-400">
             {twitterIcon}
           </a>
-          <a aria-label="instagram" href="https://instagram.com/phoneixweb.bd" target="_blank" rel="noreferrer" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300 ml-3 text-gray-400">
+          <a aria-label="instagram" href="https://instagram.com/phoneixweb.bd" target="_blank" rel="noreferrer" className="hover:text-accent hover:-translate-y-1 duration-300 ml-3 text-gray-400">
             {instagramIcon}
           </a>
-          <a aria-label="linkedin" href="https://linkedin.com/in/kazi331" target="_blank" rel="noreferrer" className="hover:text-[#00ffc6] hover:-translate-y-1 duration-300 ml-3 text-gray-400">
+          <a aria-label="linkedin" href="https://linkedin.com/in/kazi331" target="_blank" rel="noreferrer" className="hover:text-accent hover:-translate-y-1 duration-300 ml-3 text-gray-400">
             {linkedinIcon}
           </a>
-          <Link className='hover:text-[#00ffc6] hover:-translate-y-1 duration-300' to="/repos">
+          <Link className='hover:text-accent hover:-translate-y-1 duration-300' to="/repos">
             {repoIcon}
           </Link>
         </span>

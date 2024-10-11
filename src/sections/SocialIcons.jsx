@@ -14,8 +14,8 @@ export const chevronUp = <svg xmlns="http://www.w3.org/2000/svg" className="h-5 
 export const hamburger = <svg className="h-6 w-6 " id="menu-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
 export const closeIcon = <svg className='w-6 h-6 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path d="M7,18a1,1,0,0,1-.707-1.707l10-10A.99989.99989,0,0,1,17.707,7.707l-10,10A.99676.99676,0,0,1,7,18Z"></path><path className="uim-primary" d="M17,18a.99676.99676,0,0,1-.707-.293l-10-10A.99989.99989,0,0,1,7.707,6.293l10,10A1,1,0,0,1,17,18Z"></path></svg>
 export const downloadBtn = <svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5 ml-1' viewBox="0 0 21 21"><g fillRule="evenodd" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" transform="translate(3 3)"><path d="m3.5 7.5 4 4 4-4" /><path d="m7.5.5v11" /><path d="m.5 14.5h14" /></g></svg>
-export const repoIcon = <svg className="ml-3 hover:fill-[#00ffc6] fill-gray-400" xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 24 24"><title>git</title><path d="M22.607 10.939l-9.546-9.546c-0.272-0.271-0.647-0.439-1.061-0.439s-0.789 0.168-1.061 0.439l-9.546 9.546c-0.271 0.272-0.439 0.647-0.439 1.061s0.168 0.789 0.439 1.061l9.546 9.546c0.272 0.271 0.647 0.439 1.061 0.439s0.789-0.168 1.061-0.439l9.546-9.546c0.271-0.272 0.439-0.647 0.439-1.061s-0.168-0.789-0.439-1.061l0 0zM12.001 21.547l-0.001-0.001-9.546-9.546 5.681-5.681 2.087 2.087c-0.061 0.177-0.097 0.382-0.097 0.594 0 0.763 0.456 1.42 1.111 1.713l0.012 0.005v4.065c-0.666 0.297-1.123 0.954-1.123 1.717 0 1.035 0.839 1.875 1.875 1.875s1.875-0.839 1.875-1.875c0-0.765-0.458-1.423-1.115-1.715l-0.012-0.005v-3.848l1.599 1.599c-0.061 0.177-0.097 0.382-0.097 0.594 0 1.036 0.84 1.875 1.875 1.875s1.875-0.84 1.875-1.875c0-1.036-0.84-1.875-1.875-1.875-0.28 0-0.545 0.061-0.784 0.171l0.012-0.005-1.645-1.645c0.105-0.227 0.166-0.492 0.166-0.772 0-1.035-0.839-1.875-1.875-1.875-0.28 0-0.545 0.061-0.784 0.171l0.012-0.005-2.033-2.033 2.804-2.804 9.546 9.546z" /></svg>
-export const linkIcon = <svg className="w-6 h-6 ml-1 hover:fill-[#00ffc6]" fill='currentColor' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px" height="32px"><path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 5 Z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 Z" /></svg>
+export const repoIcon = <svg className="ml-3 hover:fill-accent fill-gray-400" xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 24 24"><title>git</title><path d="M22.607 10.939l-9.546-9.546c-0.272-0.271-0.647-0.439-1.061-0.439s-0.789 0.168-1.061 0.439l-9.546 9.546c-0.271 0.272-0.439 0.647-0.439 1.061s0.168 0.789 0.439 1.061l9.546 9.546c0.272 0.271 0.647 0.439 1.061 0.439s0.789-0.168 1.061-0.439l9.546-9.546c0.271-0.272 0.439-0.647 0.439-1.061s-0.168-0.789-0.439-1.061l0 0zM12.001 21.547l-0.001-0.001-9.546-9.546 5.681-5.681 2.087 2.087c-0.061 0.177-0.097 0.382-0.097 0.594 0 0.763 0.456 1.42 1.111 1.713l0.012 0.005v4.065c-0.666 0.297-1.123 0.954-1.123 1.717 0 1.035 0.839 1.875 1.875 1.875s1.875-0.839 1.875-1.875c0-0.765-0.458-1.423-1.115-1.715l-0.012-0.005v-3.848l1.599 1.599c-0.061 0.177-0.097 0.382-0.097 0.594 0 1.036 0.84 1.875 1.875 1.875s1.875-0.84 1.875-1.875c0-1.036-0.84-1.875-1.875-1.875-0.28 0-0.545 0.061-0.784 0.171l0.012-0.005-1.645-1.645c0.105-0.227 0.166-0.492 0.166-0.772 0-1.035-0.839-1.875-1.875-1.875-0.28 0-0.545 0.061-0.784 0.171l0.012-0.005-2.033-2.033 2.804-2.804 9.546 9.546z" /></svg>
+export const linkIcon = <svg className="w-6 h-6 ml-1 hover:fill-accent" fill='currentColor' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px" height="32px"><path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 5 Z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 Z" /></svg>
 export const GithubLink = ({ children }) => {
     return <span className="flex items-center gap-1">{children}{githubIcon}</span>
 }
@@ -23,22 +23,22 @@ export const GithubLink = ({ children }) => {
 const SocialIcons = () => {
     return (
         <>
-            <a aria-label="github" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://github.com/kazi331">
+            <a aria-label="github" target="_blank" className="hover:text-accent hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://github.com/kazi331">
                 {githubIcon}
             </a>
-            <a aria-label="email" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="mailto:kazisharifulislam52@gmail.com">
+            <a aria-label="email" target="_blank" className="hover:text-accent hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="mailto:kazisharifulislam52@gmail.com">
                 {mailIcon}
             </a>
-            <a aria-label="linkedin" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://linkedin.com/in/kazi331">
+            <a aria-label="linkedin" target="_blank" className="hover:text-accent hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://linkedin.com/in/kazi331">
                 {linkedinIcon}
             </a>
-            <a aria-label="twitter" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://twitter.com/dev_kazi">
+            <a aria-label="twitter" target="_blank" className="hover:text-accent hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://twitter.com/dev_kazi">
                 {twitterIcon}
             </a>
-            <a aria-label="whatsapp" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href={whatsappLink}>
+            <a aria-label="whatsapp" target="_blank" className="hover:text-accent hover:translate-x-1 duration-300 p-2" rel="noreferrer" href={whatsappLink}>
                 {whatsappIcon}
             </a>
-            <a aria-label="messenger" target="_blank" className="hover:text-[#00ffc6] hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://messenger.com/t/kazi331">
+            <a aria-label="messenger" target="_blank" className="hover:text-accent hover:translate-x-1 duration-300 p-2" rel="noreferrer" href="https://messenger.com/t/kazi331">
                 {messengerIcon}
             </a>
         </>
